@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="css/form.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>FrontEnd Conference 2024</h1>
+        <p>Join us for three days of FrontEnd Developer Seminars</p>
+    </header>
+    <main>
+        <div class="reg-form">
+       <div class="container">
+        <form action="#">
+            <h1>Registration</h1>
+            <div class="user-info">
+               <p><label for="fullname">Full Name</label><br>
+                <input type="text" id="fullname" name="fullname" placeholder="Enter Full Name" required/>
+                </p><label for="email">Email</label>
+                <input type="text" id="email" name="email" placeholder="Enter Email" required/>
+                <label for="addres">Address</label>
+                <input type="text" id="addres" name="addres" placeholder="Address" required/>
+            </div>
+            <div class="box1">
+            <label for="Seminar-days">Seminar-Days</label>
+            <select name="Entire" id="select-all">
+                <option value="">Select Seminar Days</option>
+                <option value="Entire">Entire</option>
+                <option value="day-1">Day-1</option>
+                <option value="day-2">Day-2</option>
+                <option value="day-3">Day-3</option>
+                </select>
+            </div>   
+            <!----<fieldset class="box1">
+                <legend>Conference Pass</legend>
+                <label> <input type="checkbox" name="pass" value="day-1"/>Day Pass(18 october)</label>
+                <label> <input type="checkbox" name="pass" value="day-2">Day Pass(19 october)</label>
+                <label> <input type="checkbox" name="pass" value="day-3">Day Pass(20 october)</label>
+            </fieldset>------>
+            <fieldset class="box1">
+                <legend>Food Menu</legend>
+                <label> <input type="radio" name="food" value="meat">Meat</label>
+                <label> <input type="radio" name="food" value="fish">Fish</label>
+                <label> <input type="radio" name="food" value="vegetable">Vegetable</label>
+            </fieldset>
+            <label for="allergies">Allergies (if any)</label>
+            <textarea name="allergies" id="allergies"></textarea>
+            <div class="form-submit-btn">
+               
+                <a class="btn" href="index1.html"><strong>Register</strong></a>
+            </div>
+        </form>
+    </div> 
+</div> 
+    </main>
+    <hr>
+    <footer>
+      <p>&copy; 2024 Gothenburg Conference. All rights reserved.</p>
+  </footer>
+</body>
+</html>

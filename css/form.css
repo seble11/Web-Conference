@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: url(image/conference.jpeg);
+     background-size: cover;
+     font-family: "Montserrat", sans-serif;
+}
+header{
+    background:#0051AD;
+    color: #ffffff;
+    padding: 15px 0;
+    text-align: center;
+    margin-bottom: 1em;       
+}
+header h1{
+    border-bottom: none;
+}
+.reg-form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content:space-between;
+    /*height: 100vh;*/
+}
+h1{
+    padding-bottom: 6px;
+    text-shadow: 2px 2px 2px #0000ff;
+    border-bottom: 1px solid #ffffff;
+    text-align: center;
+} 
+.container{
+    background: #595959;
+    color: #FFFFFF;
+    padding: 1em;
+    padding-left: 2em;
+    margin: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 5px 5px #ffffff;
+    font-size: 18px;
+    font-weight: 400;  
+}
+.user-info{
+    flex-grow: 1;
+    padding: 20px 0;
+}
+.user-info label{
+    margin-bottom: 1em;
+}
+.user-info input, textarea{
+    min-width: 95%;
+    height: 40px;
+    border-radius: 7px;
+    border: 1px solid #ffffff;
+    padding: 0 10px;
+    
+}
+input[type="text"]:valid {
+	background-color: rgb(116, 146, 116);
+}
+
+.user-info input:invalid {
+	background-color: rgb(237, 217, 217);}
+textarea{
+    height: 60px;
+}
+fieldset{
+    border: none;
+}
+.box1{
+    display: flex;
+    flex-direction: column; 
+    margin: 1em 0; 
+}
+.box-1 label{
+    margin-bottom: 0.5;
+} 
+select{
+    width: 95%;
+    padding: 0.5em;
+    border:1px solid #ccc;
+    border-radius: 7px;
+    background: #ffffff;
+}
+select:focus{
+outline: none;
+border-color: #007bff;
+}
+/*accessiblity*/
+input[type="checkbox"], input[type="radio"]{
+    height: 20px;
+    width: 20px;
+    margin-left: 1em;
+}
+.btn{
+    margin: 13px;
+}
+.btn{
+    display: block;
+    width: 95%;
+    max-height: 70px;
+    border:none;
+    border-radius: 14px;
+    color: #FFFFFF;
+    background: #50508B; 
+    cursor: pointer; 
+    font-size: 1.5em;
+    text-align: center;
+    text-decoration: none;
+}
+.btn:hover{
+   background: #0051AD;
+   border: inset;
+}
+footer{
+    display: inline-block;
+    text-align: center;
+    padding: 20px 0;
+    background: #0056b3;
+    bottom: 0;
+    width: 100%;
+}
+footer p{
+    color: #ffffff;
+}
+@media screen and (max-width: 600px) 
+{
+    .container{
+        min-width: 300px;
+    }
+
+}
+
+
